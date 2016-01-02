@@ -3,24 +3,21 @@
 import RPi.GPIO as GPIO
 import time
 
-WHITE = (30, 30, 30)
-OFF = (0, 0, 0)
-RED = (100, 0, 0)
-GREEN = (0, 100, 0)
-BLUE = (0, 0, 100)
-YELLOW = (50, 50, 0)
-PURPLE = (50, 0, 50)
-CYAN = (0, 50, 50)
+WHITE =  (030, 030, 030)
+OFF =    (000, 000, 000)
+RED =    (100, 000, 000)
+GREEN =  (000, 100, 000)
+BLUE =   (000, 000, 100)
+YELLOW = (050, 050, 000)
+PURPLE = (050, 000, 050)
+CYAN =   (000, 050, 050)
+ORANGE = (050, 015, 000)
 
 class Squid:
 	
-    RED_PIN = 0
-    GREEN_PIN = 0
-    BLUE_PIN = 0
+    RED_PIN, GREEN_PIN, BLUE_PIN = 0, 0, 0
 
-    red_pwm = 0
-    green_pwm = 0
-    blue_pwm = 0
+    red_pwm, green_pwm, blue_pwm = 0, 0, 0
 
     def __init__(self, red_pin, green_pin, blue_pin):
         GPIO.setmode(GPIO.BCM)
