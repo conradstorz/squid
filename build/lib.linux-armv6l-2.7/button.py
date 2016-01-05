@@ -13,7 +13,6 @@ class Button:
         GPIO.setwarnings(False)
         self.BUTTON_PIN = button_pin
         self.DEBOUNCE = debounce
-        print(debounce)
 
         GPIO.setup(self.BUTTON_PIN, GPIO.IN, pull_up_down=GPIO.PUD_UP)
  
